@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import imgDiscord from "./icons8-discord-50.png";
 import imgTwitter from "./icons8-twitter-50.png";
+import imgMatic from "./icons8-matic-50.png";
 
 const ethAmount = "30";
 const image =
@@ -123,7 +124,9 @@ function App() {
           <img className="image" src={image} alt={"projectImage"} />
         </div>
         <div>
-          <div className="amount">Amount - {ethAmount}</div>
+          <div className="amount">
+            Amount - {ethAmount} <img className="matic" src={imgMatic} alt="" />
+          </div>
           <button className="button g" onClick={connectAndSend}>
             Connect Wallet
           </button>
